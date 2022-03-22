@@ -1,0 +1,36 @@
+div img {
+  max-width: 150px;
+  min-width: 150px;
+  display: block;
+  margin-top: 1%;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+h2 {
+  text-align: center;
+  color: rgb(48, 48, 122);
+  background-color: rgb(241, 239, 235);
+  padding: 150px;
+}
+
+#accordion {
+  display: grid;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.card-header {
+  background-color: rgb(48, 48, 122);
+}
+
+.btn {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.btn:hover {
+  text-decoration: none;
+}
