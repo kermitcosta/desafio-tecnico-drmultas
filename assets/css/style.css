@@ -2,7 +2,7 @@ div img {
   max-width: 200px;
   min-width: 200px;
   display: block;
-  margin-top: 2%;
+  margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
   cursor: pointer;
@@ -11,18 +11,17 @@ div img {
 h2 {
   text-align: center;
   color: rgb(48, 48, 122);
-  background-color: rgb(241, 239, 235);
+  background-color: rgb(224, 224, 224);
   padding: 150px;
 }
 
 #accordion {
-  display: grid;
   margin-left: 20%;
   margin-right: 20%;
 }
 
 .card-header {
-  background-color: rgb(48, 48, 122);
+  background-color: rgb(27, 117, 188);
 }
 
 .btn {
@@ -33,11 +32,25 @@ h2 {
 
 .btn:hover {
   text-decoration: none;
+  color: black;
 }
 
 li {
   cursor: pointer;
-  text-decoration: underline;
   list-style-type: none;
   padding-right: 0%;
+  color: rgb(27, 117, 188);
+  margin-bottom: 1px;
+}
+
+li:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+#lista-final li {
+  list-style-type: symbols('l');
+  color: black;
+  text-decoration: none;
+  cursor: auto;
 }
