@@ -1,4 +1,6 @@
-div img {
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Hurricane&display=swap');
+
+#logo {
   max-width: 200px;
   min-width: 200px;
   display: block;
@@ -8,20 +10,42 @@ div img {
   cursor: pointer;
 }
 
-h2 {
-  text-align: center;
-  color: rgb(48, 48, 122);
-  background-color: rgb(224, 224, 224);
-  padding: 150px;
+#bloco-1 {
+  height: 400px;
+  width: 100%;
+  margin-bottom: 2%;
+  background-color: rgb(250, 248, 248);
+}
+
+#img-fundo {
+  max-height: 400px;
+  position: absolute;
+  left: 15%;
+  filter: grayscale(50%) opacity(80%);
+}
+
+#bloco-texto {
+  position: absolute;
+  margin-left: 50%;
+  padding-top: 8%;
+  font-family: 'Hurricane', cursive;
+  color: rgb(27, 117, 188);
+  font-size: 60px;
+  cursor: default;
+}
+
+.txtBranco {
+  color: gray;
 }
 
 #accordion {
+  position: relative;
   margin-left: 20%;
   margin-right: 20%;
 }
 
 .card-header {
-  background-color: rgb(27, 117, 188);
+  background-color: rgb(24, 85, 131);
 }
 
 .btn {
@@ -53,4 +77,105 @@ li:hover {
   color: black;
   text-decoration: none;
   cursor: auto;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  margin: 0;
+  text-align: center;
+  font-size: 8px;
+}
+
+/* responsividade
+/* Telas 4K */
+@media (min-width: 2560px) {
+  #img-fundo {
+    left: 20%;
+  }
+
+  #bloco-texto {
+    margin-left: 45%;
+    padding-top: 5%;
+    font-size: 70px;
+  }
+}
+
+/* Telas Laptop */
+@media (max-width: 1024px) {
+  #img-fundo {
+    left: 3%;
+  }
+
+  #bloco-texto {
+    margin-left: 48%;
+    padding-top: 16%;
+    font-size: 45px;
+  }
+}
+
+/* Telas Tablet */
+@media (max-width: 768px) {
+  #img-fundo {
+    left: -10%;
+  }
+
+  #bloco-texto {
+    padding-top: 20%;
+    font-size: 40px;
+  }
+}
+
+/* Telas intermediárias */
+
+@media (max-width: 568px) {
+  #img-fundo {
+    display: none;
+  }
+
+  #bloco-texto {
+    margin-left: 13%;
+    padding-top: 35%;
+    font-size: 55px;
+  }
+}
+
+/* Mobile Large */
+@media (max-width: 425px) {
+  #img-fundo {
+    display: none;
+  }
+
+  #bloco-texto {
+    margin-left: 7%;
+    margin-right: auto;
+    padding-top: 40%;
+    font-size: 50px;
+  }
+}
+
+/* Mobile Medium */
+@media (max-width: 375px) {
+  #img-fundo {
+    display: none;
+  }
+
+  #bloco-texto {
+    margin-left: 10%;
+    padding-top: 45%;
+    font-size: 40px;
+  }
+}
+
+/* Mobile Small */
+@media (max-width: 320px) {
+  #img-fundo {
+    display: none;
+  }
+
+  #bloco-texto {
+    margin-left: 10%;
+    padding-top: 55%;
+    font-size: 35px;
+  }
 }
