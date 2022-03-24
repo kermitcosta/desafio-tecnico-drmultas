@@ -30,7 +30,7 @@
   padding-top: 8%;
   font-family: 'Hurricane', cursive;
   color: rgb(27, 117, 188);
-  font-size: 60px;
+  font-size: 50px;
   cursor: default;
 }
 
@@ -38,24 +38,55 @@
   color: gray;
 }
 
-#accordion {
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #185583 #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #185583;
+  border-radius: 10px;
+  border: 1px solid #ffffff;
+}
+
+.accordion-body {
+  max-height: 500px;
+  overflow-y: scroll;
+}
+
+.accordion {
   position: relative;
   margin-left: 20%;
   margin-right: 20%;
 }
 
-.card-header {
-  background-color: rgb(24, 85, 131);
-}
-
-.btn {
-  color: white;
+.accordion-button {
   font-weight: bold;
   text-decoration: none;
 }
 
-.btn:hover {
-  text-decoration: none;
+.accordion-button:after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+
+.accordion-button:enabled {
+  color: white;
+  background-color: rgb(24, 85, 131);
+  font-weight: bold;
+}
+
+.accordion-button:hover {
   color: black;
 }
 
@@ -83,6 +114,7 @@ footer {
   position: relative;
   bottom: 0;
   margin: 0;
+  margin-top: 2%;
   text-align: center;
   font-size: 8px;
 }
